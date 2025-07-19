@@ -1,0 +1,169 @@
+
+    :root {
+      --primary: #fca311;
+      --dark: #14213d;
+      --light: #ffffff;
+      --gray: #e5e5e5;
+    }
+    
+    .about-hero {
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('imgs/about-hero.jpg') center/cover no-repeat;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: var(--light);
+      position: relative;
+    }
+    
+    .about-hero-content {
+      max-width: 800px;
+      padding: 0 20px;
+      z-index: 2;
+    }
+    
+    .about-hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+      color: var(--primary);
+    }
+    
+    .about-container {
+      max-width: 1200px;
+      margin: 80px auto;
+      padding: 0 20px;
+    }
+    
+    .mission-vision {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+      margin: 60px 0;
+    }
+    
+    .mission-card, .vision-card {
+      background: var(--dark);
+      padding: 40px;
+      border-radius: 10px;
+      color: var(--light);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    
+    .mission-card:hover, .vision-card:hover {
+      transform: translateY(-10px);
+    }
+    
+    .mission-card h3, .vision-card h3 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+    }
+    
+    .mission-card i, .vision-card i {
+      margin-right: 15px;
+      font-size: 2rem;
+    }
+    
+    .history-timeline {
+      position: relative;
+      padding: 40px 0;
+      margin: 60px 0;
+    }
+    
+    .timeline-item {
+      padding: 20px 40px;
+      position: relative;
+      margin-bottom: 30px;
+    }
+    
+    .timeline-item:last-child {
+      margin-bottom: 0;
+    }
+    
+    .timeline-content {
+      background: var(--light);
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      position: relative;
+    }
+    
+    .timeline-year {
+      position: absolute;
+      left: -80px;
+      top: 20px;
+      background: var(--primary);
+      color: var(--dark);
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      box-shadow: 0 0 0 5px var(--dark);
+    }
+    
+    .team-section {
+      margin: 80px 0;
+    }
+    
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    
+    .team-member {
+      background: var(--light);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    
+    .team-member:hover {
+      transform: translateY(-10px);
+    }
+    
+    .member-image {
+      height: 300px;
+      background-size: cover;
+      background-position: center;
+    }
+    
+    .member-info {
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .member-info h4 {
+      font-size: 1.3rem;
+      margin-bottom: 5px;
+      color: var(--dark);
+    }
+    
+    .member-info p {
+      color: var(--primary);
+      font-weight: 500;
+    }
+    
+    @media (max-width: 768px) {
+      .about-hero h1 {
+        font-size: 2.5rem;
+      }
+      
+      .timeline-year {
+        left: -50px;
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+      }
+    }
+  
